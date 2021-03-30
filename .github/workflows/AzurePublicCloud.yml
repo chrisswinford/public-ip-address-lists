@@ -1,4 +1,4 @@
-name: AzurePublicCloud
+name: azurecloud
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
         with:
-          ref: AzurePublicCloud
+          ref: azurecloud
       - name: Create temp dir
         run: |-
           mkdir -p temp
@@ -22,8 +22,13 @@ jobs:
           sudo apt-get install libxml2-utils
       - name: Download the source list
         run: |-
-          curl $(curl "https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519" | xmllint --xpath "string(//*[@class=\"mscom-link failoverLink\"]/@href)" -) -o ./temp/azureip.json
-          jq -r '.values[] | select(.name == "Storage") | .properties.addressPrefixes | join("\n")' ./temp/azureip.json > AzureStorage.txt
+          curl $(curl "https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519" | xmllint --xpath "string(//*[@class=\"mscom-link failoverLink\"]/@href)" -) -o ./temp/servicetags_public.json
+          jq -r '.values[] | select(.name == "Storage") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > AzureStorage.txt
+          jq -r '.values[] | select(.name == "Sql") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > AzureSQL.txt
+          jq -r '.values[] | select(.name == "EventHub") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > AzureEventHub.txt
+          jq -r '.values[] | select(.name == "LogicApps") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > LogicApps.txt
+          jq -r '.values[] | select(.name == "AppService") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > AzureAppService.txt
+          jq -r '.values[] | select(.name == "AzureCosmosDB") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > AzureCosmosDB.txt
       - name: Commit
         run: |-
           git config user.name "Automated"
