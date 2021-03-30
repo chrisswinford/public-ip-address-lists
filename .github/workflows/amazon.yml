@@ -1,4 +1,4 @@
-name: Amazon
+name: aws
 
 on:
   workflow_dispatch:
@@ -11,14 +11,14 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
         with:
-          ref: Amazon
+          ref: aws
       - name: Create temp dir
         run: |-
           mkdir -p temp
       - name: Download the source list
         run: |-
-          curl https://ip-ranges.amazonaws.com/ip-ranges.json -o ./temp/aws.json
-          jq -r '.prefixes[] | select(.region == "us-east-1") | .ip_prefix' ./temp/aws.json > us-east-1.txt
+          curl https://ip-ranges.amazonaws.com/ip-ranges.json -o ./temp/ip-ranges.json
+          jq -r '.prefixes[] | select(.region == "us-east-1") | .ip_prefix' ./temp/ip-ranges.json > us-east-1.txt
       - name: Commit
         run: |-
           git config user.name "Automated"
