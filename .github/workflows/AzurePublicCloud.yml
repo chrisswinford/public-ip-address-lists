@@ -22,7 +22,8 @@ jobs:
           sudo apt-get install libxml2-utils
       - name: Download the source list
         run: |-
-          #curl $(curl "https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519" | xmllint --xpath "string(//*[@class=\"mscom-link failoverLink\"]/@href)" -) -o ip.json
+          curl $(curl "https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519" | xmllint --xpath "string(//*[@class=\"mscom-link failoverLink\"]/@href)" -) -o ./temp/azureip.json
+          jq -r '.values[] | select(.name == "Storage") | .properties.addressPrefixes | join("\n")' ./temp/azureip.json > AzureStorage.txt
       - name: Commit
         run: |-
           git config user.name "Automated"
