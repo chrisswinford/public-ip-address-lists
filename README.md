@@ -8,12 +8,12 @@ This repository's goal is to automatically download, parse, and publish commonly
 
 | Provider | Branch | IP Network Source |
 | --- | --- | --- |
-| Amazon Web Services (AWS) | Amazon | https://ip-ranges.amazonaws.com/ip-ranges.json | 
-| Google Cloud Platform (GCP) | GCP | https://www.gstatic.com/ipranges/cloud.json |
-| Microsoft Azure (Public Cloud) | AzurePublicCloud (rename to AzureCloud?) | https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519 |
-| Microsoft Azure (China Cloud) | TBD (AzureChinaCloud?) | https://www.microsoft.com/en-us/download/details.aspx?id=57062 |
-| Microsoft Azure (US Government Cloud) | TBD (AzureUSGovernment?) | https://www.microsoft.com/en-us/download/details.aspx?id=57063 |
-| Microsoft Azure (German Cloud) | TBD (AzureGermanCloud?) | https://www.microsoft.com/en-us/download/details.aspx?id=57064 |
+| Amazon Web Services (AWS) | amazon | https://ip-ranges.amazonaws.com/ip-ranges.json | 
+| Google Cloud Platform (GCP) | gcp | https://www.gstatic.com/ipranges/cloud.json |
+| Microsoft Azure (Public Cloud) | azurecloud | https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519 |
+| Microsoft Azure (China Cloud) | azurechinacloud | https://www.microsoft.com/en-us/download/details.aspx?id=57062 |
+| Microsoft Azure (US Government Cloud) | azureusgovernment | https://www.microsoft.com/en-us/download/details.aspx?id=57063 |
+| Microsoft Azure (German Cloud) | azuregermancloud | https://www.microsoft.com/en-us/download/details.aspx?id=57064 |
 
 
 # Inspiration
