@@ -18,7 +18,7 @@ jobs:
       - name: Download the source list
         run: |-
           curl https://ip-ranges.amazonaws.com/ip-ranges.json -o ./temp/aws.json
-          jq -r '.prefixes[] | select(.region == "us-east-1") | .ip_prefix' aws.json > us-east-1.txt
+          jq -r '.prefixes[] | select(.region == "us-east-1") | .ip_prefix' ./temp/aws.json > us-east-1.txt
       - name: Commit
         run: |-
           git config user.name "Automated"
