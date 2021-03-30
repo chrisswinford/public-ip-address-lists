@@ -1,0 +1,35 @@
+name: AzurePublicCloud
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          ref: AzurePublicCloud
+      - name: Create temp dir
+        run: |-
+          mkdir -p temp
+      - name: Install prerequisites
+        run: |-
+          # https://github.com/actions/virtual-environments/issues/423
+          # sudo apt-get update
+          sudo apt-get install libxml2-utils
+      - name: Download the source list
+        run: |-
+          #curl $(curl "https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519" | xmllint --xpath "string(//*[@class=\"mscom-link failoverLink\"]/@href)" -) -o ip.json
+      - name: Commit
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "Latest data: ${timestamp}" || exit 0
+      - name: Push
+        run: |-
+          git push
