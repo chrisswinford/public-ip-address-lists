@@ -18,7 +18,7 @@ This repo was inspired by https://github.com/jtschichold/panwdbl-actions, which 
 #### Download latest Microsoft Azure lists
 https://github.com/MicrosoftDocs/azure-docs/issues/60553
 
-curl $(curl "https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519" | xmllint --xpath "string(//*[@class=\"mscom-link failoverLink\"]/@href)" -) -o ip.json
+```curl $(curl "https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519" | xmllint --xpath "string(//*[@class=\"mscom-link failoverLink\"]/@href)" -) -o ip.json```
 
 ## Output Formats
 
