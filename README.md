@@ -4,14 +4,24 @@ WARNING: USE THIS REPO AT YOUR OWN RISK
 
 This repository's goal is to automatically download, parse, and publish commonly-used IP prefix lists into other formats, with as little personal compute or cost as possible.
 
+## Planned Data Sources
+
+| Provider | Branch | IP Network Source |
+| --- | --- | --- |
+| Amazon Web Services (AWS) | Amazon | https://ip-ranges.amazonaws.com/ip-ranges.json | 
+| Google Cloud Platform (GCP) | GCP | https://www.gstatic.com/ipranges/cloud.json |
+| Microsoft Azure (Public Cloud) | AzurePublicCloud (rename to AzureCloud?) | https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519 |
+| Microsoft Azure (China Cloud) | TBD (AzureChinaCloud?) | https://www.microsoft.com/en-us/download/details.aspx?id=57062 |
+| Microsoft Azure (US Government Cloud) | TBD (AzureUSGovernment?) | https://www.microsoft.com/en-us/download/details.aspx?id=57063 |
+| Microsoft Azure (German Cloud) | TBD (AzureGermanCloud?) | https://www.microsoft.com/en-us/download/details.aspx?id=57064 |
+
+
 # Inspiration
 This repo was inspired by https://github.com/jtschichold/panwdbl-actions, which itself was based on ideas from https://github.com/alex/nyt-2020-election-scraper.
 
 # Notes
 
 ## Data Sources
-
-### Amazon Web Services
 
 ### Microsoft Azure
 
