@@ -27,12 +27,21 @@ jobs:
           curl $(curl "https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519" | xmllint --xpath "string(//*[@class=\"mscom-link failoverLink\"]/@href)" -) -o ./temp/servicetags_public.json
       - name: Process the list
         run: |-
-          jq -r '.values[] | select(.name == "Storage") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > AzureStorage.txt
-          jq -r '.values[] | select(.name == "Sql") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > AzureSQL.txt
-          jq -r '.values[] | select(.name == "EventHub") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > AzureEventHub.txt
-          jq -r '.values[] | select(.name == "LogicApps") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > LogicApps.txt
-          jq -r '.values[] | select(.name == "AppService") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > AzureAppService.txt
-          jq -r '.values[] | select(.name == "AzureCosmosDB") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > AzureCosmosDB.txt
+          # https://stackoverflow.com/questions/618378/select-unique-or-distinct-values-from-a-list-in-unix-shell-script
+          # "sort is necessary in this command line, uniq only strips duplicate lines that are immediately after each other"
+
+          # https://stackoverflow.com/a/40027637 - Pass variables in via jq arguments for easier readability and security.
+
+          # for each region, make regional file named region.$region.txt
+          for row in $(jq -r '.values[] | .properties.region' azure.json | sort | uniq); do
+              jq -r --arg REGION "${row}" '.values[] | select(.properties.region == $REGION) | .properties.addressPrefixes | join("\n")' azure.json > region.${row}.txt
+          done
+
+          # for each service, make service file named service.$service.txt
+          for row in $(jq -r '.values[] | .name' azure.json | sort | uniq); do
+              jq -r --arg SERVICE "${row}" '.values[] | select(.name == $SERVICE) | .properties.addressPrefixes | join("\n")' azure.json > service.${row}.txt
+          done
+
       - name: Commit
         run: |-
           git config user.name "Automated"
