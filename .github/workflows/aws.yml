@@ -18,6 +18,8 @@ jobs:
       - name: Download the source list
         run: |-
           curl https://ip-ranges.amazonaws.com/ip-ranges.json -o ./temp/ip-ranges.json
+      - name: Process the list
+        run: |-
           jq -r '.prefixes[] | select(.region == "us-east-1") | .ip_prefix' ./temp/ip-ranges.json > us-east-1.txt
       - name: Commit
         run: |-
