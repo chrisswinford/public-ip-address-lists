@@ -19,7 +19,7 @@ jobs:
           mkdir -p temp
       - name: Download the source list
         run: |-
-          curl https://ip-ranges.amazonaws.com/ip-ranges.json -o ./temp/ip-ranges.json
+          curl https://ip-ranges.amazonaws.com/ip-ranges.json -o ./temp/cloudprefixes.json
       - name: Process the list
         run: |-
           # https://stackoverflow.com/questions/618378/select-unique-or-distinct-values-from-a-list-in-unix-shell-script
@@ -27,14 +27,14 @@ jobs:
 
           # https://stackoverflow.com/a/40027637 - Pass variables in via jq arguments for easier readability and security.
 
-          # Get list of regions from file; for each region, make regional file named $region.txt
-          for row in $(jq -r '.prefixes[] | .region' ./temp/ip-ranges.json | sort | uniq); do
-              jq -r --arg REGION "${row}" '.prefixes[] | select(.region == $REGION) | .ip_prefix' ./temp/ip-ranges.json > ${row}.txt
+          # Get list of regions from file; for each region, make regional file named region.$region.txt
+          for row in $(jq -r '.prefixes[] | .region' ./temp/cloudprefixes.json | sort | uniq); do
+              jq -r --arg REGION "${row}" '.prefixes[] | select(.region == $REGION) | .ip_prefix' ./temp/cloudprefixes.json > region.${row}.txt
           done
 
-          # Get list of services from file; for each service, make service file named $service.txt
-          for row in $(jq -r '.prefixes[] | .service' ./temp/ip-ranges.json | sort | uniq); do
-              jq -r --arg SERVICE "${row}" '.prefixes[] | select(.service == $SERVICE) | .ip_prefix' ./temp/ip-ranges.json > ${row}.txt
+          # Get list of services from file; for each service, make service file named service.$service.txt
+          for row in $(jq -r '.prefixes[] | .service' ./temp/cloudprefixes.json | sort | uniq); do
+              jq -r --arg SERVICE "${row}" '.prefixes[] | select(.service == $SERVICE) | .ip_prefix' ./temp/cloudprefixes.json > service.${row}.txt
           done
 
       - name: Commit
