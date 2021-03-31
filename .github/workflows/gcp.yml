@@ -22,7 +22,21 @@ jobs:
           curl https://www.gstatic.com/ipranges/cloud.json -o ./temp/cloud.json
       - name: Process the list
         run: |-
-          jq -r '.prefixes[] | select(.scope == "us-east1") | .ipv4Prefix' ./temp/cloud.json > us-east1.txt
+          # https://stackoverflow.com/questions/618378/select-unique-or-distinct-values-from-a-list-in-unix-shell-script
+          # "sort is necessary in this command line, uniq only strips duplicate lines that are immediately after each other"
+
+          # https://stackoverflow.com/a/40027637 - Pass variables in via jq arguments for easier readability and security.
+
+          # Get list of regions from file; for each region, make regional file named $region.txt
+          for row in $(jq -r '.prefixes[] | .scope' ./temp/cloud.json | sort | uniq); do
+              jq -r --arg REGION "${row}" '.prefixes[] | select(.region == $REGION) | .ipv4Prefix' ./temp/cloud.json > ${row}.txt
+          done
+
+          # Get list of services from file; for each service, make service file named $service.txt
+          for row in $(jq -r '.prefixes[] | .service' ./temp/cloud.json | sort | uniq); do
+              jq -r --arg SERVICE "${row}" '.prefixes[] | select(.service == $SERVICE) | .ipv4Prefix' ./temp/cloud.json > ${row}.txt
+          done
+
       - name: Commit
         run: |-
           git config user.name "Automated"
