@@ -23,6 +23,8 @@ jobs:
       - name: Download the source list
         run: |-
           curl $(curl "https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519" | xmllint --xpath "string(//*[@class=\"mscom-link failoverLink\"]/@href)" -) -o ./temp/servicetags_public.json
+      - name: Process the list
+        run: |-
           jq -r '.values[] | select(.name == "Storage") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > AzureStorage.txt
           jq -r '.values[] | select(.name == "Sql") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > AzureSQL.txt
           jq -r '.values[] | select(.name == "EventHub") | .properties.addressPrefixes | join("\n")' ./temp/servicetags_public.json > AzureEventHub.txt
