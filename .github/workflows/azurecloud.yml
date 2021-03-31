@@ -2,6 +2,8 @@ name: azurecloud
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '30 4 * * 1,4'
 
 jobs:
   build:
