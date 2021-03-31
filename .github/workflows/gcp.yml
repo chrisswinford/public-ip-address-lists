@@ -29,13 +29,11 @@ jobs:
 
           # Get list of regions from file; for each region, make regional file named $region.txt
           for row in $(jq -r '.prefixes[] | .scope' ./temp/cloud.json | sort | uniq); do
-              jq -r --arg REGION "${row}" '.prefixes[] | select(.region == $REGION) | .ipv4Prefix' ./temp/cloud.json > ${row}.txt
+              jq -r --arg REGION "${row}" '.prefixes[] | select(.scope == $REGION) | .ipv4Prefix' ./temp/cloud.json > ${row}.txt
           done
 
-          # Get list of services from file; for each service, make service file named $service.txt
-          for row in $(jq -r '.prefixes[] | .service' ./temp/cloud.json | sort | uniq); do
-              jq -r --arg SERVICE "${row}" '.prefixes[] | select(.service == $SERVICE) | .ipv4Prefix' ./temp/cloud.json > ${row}.txt
-          done
+          # Create list for all ipv4Prefixes of service "Google Cloud"
+          jq -r --arg SERVICE "Google Cloud" '.prefixes[] | select(.service == $SERVICE) | .ipv4Prefix' ./temp/cloud.json > googlecloud.txt
 
       - name: Commit
         run: |-
