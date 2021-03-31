@@ -28,12 +28,12 @@ jobs:
           # https://stackoverflow.com/a/40027637 - Pass variables in via jq arguments for easier readability and security.
 
           # Get list of regions from file; for each region, make regional file named $region.txt
-          for row in $(jq -r '.prefixes[] | .region' aws.json | sort | uniq); do
+          for row in $(jq -r '.prefixes[] | .region' ./temp/ip-ranges.json | sort | uniq); do
               jq -r --arg REGION "${row}" '.prefixes[] | select(.region == $REGION) | .ip_prefix' ./temp/ip-ranges.json > ${row}.txt
           done
 
           # Get list of services from file; for each service, make service file named $service.txt
-          for row in $(jq -r '.prefixes[] | .service' aws.json | sort | uniq); do
+          for row in $(jq -r '.prefixes[] | .service' ./temp/ip-ranges.json | sort | uniq); do
               jq -r --arg SERVICE "${row}" '.prefixes[] | select(.service == $SERVICE) | .ip_prefix' ./temp/ip-ranges.json > ${row}.txt
           done
 
