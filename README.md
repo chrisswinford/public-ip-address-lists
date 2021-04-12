@@ -14,6 +14,12 @@ This repository's goal is to automatically download, parse, and publish commonly
 | Microsoft Azure (China Cloud) | azurechinacloud | https://www.microsoft.com/en-us/download/details.aspx?id=57062 |
 | Microsoft Azure (US Government Cloud) | azureusgovernment | https://www.microsoft.com/en-us/download/details.aspx?id=57063 |
 | Microsoft Azure (German Cloud) | azuregermancloud | https://www.microsoft.com/en-us/download/details.aspx?id=57064 |
+| Abuse.ch SSL Blacklist | TBD | https://sslbl.abuse.ch/blacklist/ |
+| DSHIELD Block List | TBD | https://www.dshield.org/xml.html |
+| FireHOL Block List | TBD | https://iplists.firehol.org/ |
+| EmergingThreats Compromised Host List | TBD | https://doc.emergingthreats.net/bin/view/Main/CompromisedHost |
+| MalwareDomainList | TBD | https://www.malwaredomainlist.com/ |
+| Spamhaus DROP Lists | TBD | https://www.spamhaus.org/drop/ |
 
 
 # Inspiration
