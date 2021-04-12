@@ -8,7 +8,7 @@ This repository's goal is to automatically download, parse, and publish commonly
 
 | Provider | Branch | Documentation | IP Network Source |
 | --- | --- | --- | --- |
-| Amazon Web Services (AWS) | amazon | TBD | https://ip-ranges.amazonaws.com/ip-ranges.json | 
+| Amazon Web Services (AWS) | aws | TBD | https://ip-ranges.amazonaws.com/ip-ranges.json | 
 | Google Cloud Platform (GCP) | gcp | TBD | https://www.gstatic.com/ipranges/cloud.json |
 | Microsoft Azure (Public Cloud) | azurecloud | TBD | https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519 |
 | Microsoft Azure (China Cloud) | azurechinacloud | TBD | https://www.microsoft.com/en-us/download/details.aspx?id=57062 |
