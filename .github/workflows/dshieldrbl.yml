@@ -22,9 +22,10 @@ jobs:
           curl https://www.dshield.org/block.txt -o ./temp/cloudprefixes.txt
       - name: Process the list
         run: |-
-          # Strip "Start" line, whitespace, and empty lines
-          sed 's/Start.*//; s/^ *//; s/ *$//; /^$/d' ./temp/cloudprefixes.txt > ./temp/cloudprefixes2.txt
-          # 's/Start.*//' => remove semicolon and everything after (including 0 chars)
+          # Strip "Start" line, comments, whitespace, and empty lines
+          sed 's/#.*//; s/Start.*//; s/^ *//; s/ *$//; /^$/d' ./temp/cloudprefixes.txt > ./temp/cloudprefixes2.txt
+          # 's/\#.*//' => remove # and everything after (including 0 chars)
+          # 's/Start.*//' => remove Start and everything after (including 0 chars)
           # 's/^ *//'  => left trim
           # 's/ *$//'  => right trim
           # '/^$/d'    => remove empty line
