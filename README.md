@@ -18,6 +18,7 @@ This repository's goal is to automatically download, parse, and publish commonly
 | Threat Provider | Branch | Provider Documentation | IP Network Source | Source is EDL-ready? |
 | --- | :-: | :-: | :-: | :-: |
 | Abuse.ch SSL Blacklist | TBD | [Link](https://sslbl.abuse.ch/blacklist/) | TBD | TBD |
+| Abuse.ch Botnet C2 IP Blacklist | TBD | [Link](https://sslbl.abuse.ch/blacklist/) | [Link](https://sslbl.abuse.ch/blacklist/sslipblacklist.txt) | Yes |
 | DSHIELD Recommended Block List | [dshieldrbl](https://github.com/chrisswinford/public-ip-address-lists/tree/dshieldrbl) | [Link](https://www.dshield.org/xml.html) | [Link](https://www.dshield.org/block.txt) | No |
 | FireHOL Block List | TBD | [Link](https://iplists.firehol.org/) | TBD | TBD |
 | EmergingThreats Compromised Host List | TBD | [Link](https://doc.emergingthreats.net/bin/view/Main/CompromisedHost) | TBD | TBD |
