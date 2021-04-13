@@ -6,14 +6,17 @@ This repository's goal is to automatically download, parse, and publish commonly
 
 ## Planned Data Sources
 
-| Provider | Branch | Documentation | IP Network Source | Source is EDL-ready? |
+| Cloud Provider | Branch | Documentation | IP Network Source | Source is EDL-ready? |
 | --- | :-: | :-: | :-: | :-: |
 | Amazon Web Services (AWS) | aws | TBD | [Link](https://ip-ranges.amazonaws.com/ip-ranges.json) | No |
 | Google Cloud Platform (GCP) | gcp | TBD | [Link](https://www.gstatic.com/ipranges/cloud.json) | No |
 | Microsoft Azure (Public Cloud) | azurecloud | TBD | [Link](https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519) | No |
 | Microsoft Azure (China Cloud) | azurechinacloud | TBD | [Link](https://www.microsoft.com/en-us/download/details.aspx?id=57062) | No |
-| Microsoft Azure (US Government Cloud) | azureusgovernment | TBD | [Link](https://www.microsoft.com/en-us/download/details.aspx?id=57063) | No |
 | Microsoft Azure (German Cloud) | azuregermancloud | TBD | [Link](https://www.microsoft.com/en-us/download/details.aspx?id=57064) | No |
+| Microsoft Azure (US Government Cloud) | azureusgovernment | TBD | [Link](https://www.microsoft.com/en-us/download/details.aspx?id=57063) | No |
+
+| Threat Provider | Branch | Documentation | IP Network Source | Source is EDL-ready? |
+| --- | :-: | :-: | :-: | :-: |
 | Abuse.ch SSL Blacklist | TBD | [Link](https://sslbl.abuse.ch/blacklist/) | TBD | TBD |
 | DSHIELD Recommended Block List | dshieldrbl | [Link](https://www.dshield.org/xml.html) | [Link](https://www.dshield.org/block.txt) | TBD |
 | FireHOL Block List | TBD | [Link](https://iplists.firehol.org/) | TBD | TBD |
