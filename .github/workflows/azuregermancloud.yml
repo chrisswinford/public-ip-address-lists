@@ -1,0 +1,57 @@
+name: azuregermancloud
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 4 * * 1,4'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          ref: azuregermancloud
+      - name: Create temp dir
+        run: |-
+          mkdir -p temp
+      - name: Install prerequisites
+        run: |-
+          # https://github.com/actions/virtual-environments/issues/423
+          # sudo apt-get update
+          sudo apt-get install libxml2-utils
+      - name: Download the source list
+        run: |-
+          curl $(curl "https://www.microsoft.com/en-us/download/confirmation.aspx?id=57064" | xmllint --xpath "string(//*[@class=\"mscom-link failoverLink\"]/@href)" -) -o ./temp/cloudprefixes.json
+      - name: Process the list
+        run: |-
+          # https://stackoverflow.com/questions/618378/select-unique-or-distinct-values-from-a-list-in-unix-shell-script
+          # "sort is necessary in this command line, uniq only strips duplicate lines that are immediately after each other"
+
+          # https://stackoverflow.com/a/40027637 - Pass variables in via jq arguments for easier readability and security.
+
+          # for each region, make regional file named region.$region.txt
+          for row in $(jq -r '.values[] | .properties.region' ./temp/cloudprefixes.json | sort | uniq); do
+              jq -r --arg REGION "${row}" '.values[] | select(.properties.region == $REGION) | .properties.addressPrefixes | join("\n")' ./temp/cloudprefixes.json > region.${row}.txt
+          done
+
+          # for each service, make service file named service.$service.txt
+          for row in $(jq -r '.values[] | .name' ./temp/cloudprefixes.json | sort | uniq); do
+              jq -r --arg SERVICE "${row}" '.values[] | select(.name == $SERVICE) | .properties.addressPrefixes | join("\n")' ./temp/cloudprefixes.json > service.${row}.txt
+          done
+          
+          # Create a list of files; GitHub truncates directory listings at 1,000 files.
+          ls *.txt > _index
+
+      - name: Commit
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "Latest data: ${timestamp}" || exit 0
+      - name: Push
+        run: |-
+          git push
