@@ -41,7 +41,10 @@ jobs:
           for row in $(jq -r '.values[] | .name' ./temp/cloudprefixes.json | sort | uniq); do
               jq -r --arg SERVICE "${row}" '.values[] | select(.name == $SERVICE) | .properties.addressPrefixes | join("\n")' ./temp/cloudprefixes.json > service.${row}.txt
           done
-
+          
+          # Create a list of files; GitHub truncates directory listings at 1,000 files.
+          ls *.txt > _index
+          
       - name: Commit
         run: |-
           git config user.name "Automated"
