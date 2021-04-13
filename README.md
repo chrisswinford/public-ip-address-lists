@@ -7,7 +7,7 @@ This repository's goal is to automatically download, parse, and publish commonly
 ## Planned Data Sources
 
 | Provider | Branch | Documentation | IP Network Source | Source is EDL-ready? |
-| --- | --- | --- | --- | --- |
+| --- | --- | :-: | :-: | :-: |
 | Amazon Web Services (AWS) | aws | TBD | [Link](https://ip-ranges.amazonaws.com/ip-ranges.json) | No |
 | Google Cloud Platform (GCP) | gcp | TBD | [Link](https://www.gstatic.com/ipranges/cloud.json) | No |
 | Microsoft Azure (Public Cloud) | azurecloud | TBD | [Link](https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519) | No |
