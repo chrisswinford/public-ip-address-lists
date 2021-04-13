@@ -23,7 +23,7 @@ jobs:
       - name: Process the list
         run: |-
           # Strip comments, whitespace, and empty lines
-          sed 's/\;.*//; s/^ *//; s/ *$//; /^$/d' /temp/cloudprefixes.txt > spamhausdrop.txt
+          sed 's/\;.*//; s/^ *//; s/ *$//; /^$/d' ./temp/cloudprefixes.txt > spamhausdrop.txt
           # 's/\;.*//' => remove semicolon and everything after (including 0 chars)
           # 's/^ *//'  => left trim
           # 's/ *$//'  => right trim
