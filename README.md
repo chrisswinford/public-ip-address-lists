@@ -19,7 +19,7 @@ This repository's goal is to automatically download, parse, and publish commonly
 | FireHOL Block List | TBD | https://iplists.firehol.org/ | TBD |
 | EmergingThreats Compromised Host List | TBD | https://doc.emergingthreats.net/bin/view/Main/CompromisedHost | TBD |
 | MalwareDomainList | TBD | https://www.malwaredomainlist.com/ | TBD |
-| Spamhaus DROP Lists | TBD | https://www.spamhaus.org/drop/ | TBD |
+| Spamhaus DROP Lists | spamhausdrop | https://www.spamhaus.org/drop/ | https://www.spamhaus.org/drop/drop.txt |
 
 
 # Inspiration
