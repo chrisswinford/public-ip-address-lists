@@ -18,11 +18,11 @@ This repository's goal is to automatically download, parse, and publish commonly
 | Threat Provider | Branch | Documentation | IP Network Source | Source is EDL-ready? |
 | --- | :-: | :-: | :-: | :-: |
 | Abuse.ch SSL Blacklist | TBD | [Link](https://sslbl.abuse.ch/blacklist/) | TBD | TBD |
-| DSHIELD Recommended Block List | dshieldrbl | [Link](https://www.dshield.org/xml.html) | [Link](https://www.dshield.org/block.txt) | TBD |
+| DSHIELD Recommended Block List | dshieldrbl | [Link](https://www.dshield.org/xml.html) | [Link](https://www.dshield.org/block.txt) | No |
 | FireHOL Block List | TBD | [Link](https://iplists.firehol.org/) | TBD | TBD |
 | EmergingThreats Compromised Host List | TBD | [Link](https://doc.emergingthreats.net/bin/view/Main/CompromisedHost) | TBD | TBD |
 | MalwareDomainList | TBD | [Link](https://www.malwaredomainlist.com/) | TBD | TBD |
-| Spamhaus DROP Lists | spamhausdrop | [Link](https://www.spamhaus.org/drop/) | [Link](https://www.spamhaus.org/drop/drop.txt) | TBD |
+| Spamhaus DROP Lists | spamhausdrop | [Link](https://www.spamhaus.org/drop/) | [Link](https://www.spamhaus.org/drop/drop.txt) | Yes |
 
 
 # Inspiration
