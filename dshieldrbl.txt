@@ -1,31 +1,3 @@
-#/
-#   DShield.org Recommended Block List/
-#    (c) 2021 DShield.org/
-#   some rights reserved. Details http://creativecommons.org/licenses/by-nc-sa/2.5//
-#   use on your own risk. No warranties implied./
-#   primary URL: http://feeds.dshield.org/block.txt/
-#     PGP Sign.: http://feeds.dshield.org/block.txt.asc/
-#/
-#   comments: info@dshield.org/
-#    updated: Tue Apr 13 14:45:22 2021 UTC/
-#/
-#    This list summarizes the top 20 attacking class C (/24) subnets/
-#   over the last three days. The number of 'attacks' indicates the/
-#   number of targets reporting scans from this subnet./
-#/
-#/
-#    Columns (tab delimited):/
-#/
-#    (1) start of netblock/
-#    (2) end of netblock/
-#    (3) subnet (/24 for class C)/
-#    (4) number of targets scanned/
-#    (5) name of Network/
-#    (6) Country/
-#    (7) contact email address/
-#/
-#    If a range is assigned to multiple users, the first one is listed./
-#/
 193.27.228.0/24
 89.248.165.0/24
 167.248.133.0/24
@@ -43,6 +15,6 @@
 45.135.232.0/24
 104.206.128.0/24
 192.241.212.0/24
-92.118.161.0/24
 192.241.206.0/24
+92.118.161.0/24
 185.173.35.0/24
