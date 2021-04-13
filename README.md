@@ -6,7 +6,7 @@ This repository's goal is to automatically download, parse, and publish commonly
 
 ## Planned Data Sources
 
-| Cloud Provider | Branch | Documentation | IP Network Source | Source is EDL-ready? |
+| Cloud Provider | Branch | Provider Documentation | IP Network Source | Source is EDL-ready? |
 | --- | :-: | :-: | :-: | :-: |
 | Amazon Web Services (AWS) | [aws](https://github.com/chrisswinford/public-ip-address-lists/tree/aws) | TBD | [Link](https://ip-ranges.amazonaws.com/ip-ranges.json) | No |
 | Google Cloud Platform (GCP) | [gcp](https://github.com/chrisswinford/public-ip-address-lists/tree/gcp) | TBD | [Link](https://www.gstatic.com/ipranges/cloud.json) | No |
@@ -15,7 +15,7 @@ This repository's goal is to automatically download, parse, and publish commonly
 | Microsoft Azure (German Cloud) | [azuregermancloud](https://github.com/chrisswinford/public-ip-address-lists/tree/azuregermancloud) | TBD | [Link](https://www.microsoft.com/en-us/download/details.aspx?id=57064) | No |
 | Microsoft Azure (US Government Cloud) | [azureusgovernment](https://github.com/chrisswinford/public-ip-address-lists/tree/azureusgovernment) | TBD | [Link](https://www.microsoft.com/en-us/download/details.aspx?id=57063) | No |
 
-| Threat Provider | Branch | Documentation | IP Network Source | Source is EDL-ready? |
+| Threat Provider | Branch | Provider Documentation | IP Network Source | Source is EDL-ready? |
 | --- | :-: | :-: | :-: | :-: |
 | Abuse.ch SSL Blacklist | TBD | [Link](https://sslbl.abuse.ch/blacklist/) | TBD | TBD |
 | DSHIELD Recommended Block List | [dshieldrbl](https://github.com/chrisswinford/public-ip-address-lists/tree/dshieldrbl) | [Link](https://www.dshield.org/xml.html) | [Link](https://www.dshield.org/block.txt) | No |
