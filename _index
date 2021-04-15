@@ -1,7 +1,9 @@
 region.chinaeast.txt
 region.chinaeast2.txt
+region.chinaeast3.txt
 region.chinanorth.txt
 region.chinanorth2.txt
+region.chinanorth3.txt
 service.ActionGroup.ChinaEast.txt
 service.ActionGroup.ChinaEast2.txt
 service.ActionGroup.ChinaNorth.txt
@@ -64,8 +66,10 @@ service.AzureCosmosDB.ChinaNorth2.txt
 service.AzureCosmosDB.txt
 service.AzureDataExplorerManagement.ChinaEast.txt
 service.AzureDataExplorerManagement.ChinaEast2.txt
+service.AzureDataExplorerManagement.ChinaEast3.txt
 service.AzureDataExplorerManagement.ChinaNorth.txt
 service.AzureDataExplorerManagement.ChinaNorth2.txt
+service.AzureDataExplorerManagement.ChinaNorth3.txt
 service.AzureDataExplorerManagement.txt
 service.AzureDatabricks.txt
 service.AzureEventGrid.ChinaEast.txt
@@ -90,8 +94,10 @@ service.AzureMachineLearning.ChinaNorth2.txt
 service.AzureMachineLearning.txt
 service.AzureMonitor.ChinaEast.txt
 service.AzureMonitor.ChinaEast2.txt
+service.AzureMonitor.ChinaEast3.txt
 service.AzureMonitor.ChinaNorth.txt
 service.AzureMonitor.ChinaNorth2.txt
+service.AzureMonitor.ChinaNorth3.txt
 service.AzureMonitor.Core.txt
 service.AzureMonitor.txt
 service.AzurePortal.ChinaEast.txt
