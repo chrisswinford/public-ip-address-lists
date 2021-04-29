@@ -53,6 +53,7 @@ service.AzureTrafficManager.txt
 service.BatchNodeManagement.GermanyCentral.txt
 service.BatchNodeManagement.GermanyNorthEast.txt
 service.BatchNodeManagement.txt
+service.EOPExternalPublishedIPs.txt
 service.EventHub.GermanyCentral.txt
 service.EventHub.GermanyNorthEast.txt
 service.EventHub.txt
