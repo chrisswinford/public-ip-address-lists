@@ -128,6 +128,7 @@ service.DataFactory.ChinaNorth.txt
 service.DataFactory.ChinaNorth2.txt
 service.DataFactory.txt
 service.DataFactoryManagement.txt
+service.EOPExternalPublishedIPs.txt
 service.EventHub.ChinaEast.txt
 service.EventHub.ChinaEast2.txt
 service.EventHub.ChinaNorth.txt
@@ -166,6 +167,11 @@ service.PowerQueryOnline.ChinaEast2.txt
 service.PowerQueryOnline.ChinaNorth.txt
 service.PowerQueryOnline.ChinaNorth2.txt
 service.PowerQueryOnline.txt
+service.SCCservice.ChinaEast.txt
+service.SCCservice.ChinaEast2.txt
+service.SCCservice.ChinaNorth.txt
+service.SCCservice.ChinaNorth2.txt
+service.SCCservice.txt
 service.ServiceBus.ChinaEast.txt
 service.ServiceBus.ChinaEast2.txt
 service.ServiceBus.ChinaNorth.txt
