@@ -194,3 +194,6 @@ service.StorageSyncService.ChinaEast2.txt
 service.StorageSyncService.ChinaNorth.txt
 service.StorageSyncService.ChinaNorth2.txt
 service.StorageSyncService.txt
+service.WindowsVirtualDesktop.ChinaEast2.txt
+service.WindowsVirtualDesktop.ChinaNorth2.txt
+service.WindowsVirtualDesktop.txt
