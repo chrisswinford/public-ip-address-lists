@@ -1288,6 +1288,9 @@ service.AzureSignalR.EastUS2EUAP.txt
 service.AzureSignalR.FranceCentral.txt
 service.AzureSignalR.GermanyWestCentral.txt
 service.AzureSignalR.JapanEast.txt
+service.AzureSignalR.JapanWest.txt
+service.AzureSignalR.JioIndiaCentral.txt
+service.AzureSignalR.JioIndiaWest.txt
 service.AzureSignalR.KoreaCentral.txt
 service.AzureSignalR.NorthCentralUS.txt
 service.AzureSignalR.NorthEurope.txt
