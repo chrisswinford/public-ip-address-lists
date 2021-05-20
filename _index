@@ -154,7 +154,9 @@ service.AzureResourceManager.USGovIowa.txt
 service.AzureResourceManager.USGovTexas.txt
 service.AzureResourceManager.USGovVirginia.txt
 service.AzureResourceManager.txt
+service.AzureSignalR.USDoDEast.txt
 service.AzureSignalR.USGovArizona.txt
+service.AzureSignalR.USGovIowa.txt
 service.AzureSignalR.USGovVirginia.txt
 service.AzureSignalR.txt
 service.AzureSiteRecovery.txt
