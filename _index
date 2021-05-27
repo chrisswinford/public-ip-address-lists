@@ -123,6 +123,11 @@ service.AzureResourceManager.ChinaEast2.txt
 service.AzureResourceManager.ChinaNorth.txt
 service.AzureResourceManager.ChinaNorth2.txt
 service.AzureResourceManager.txt
+service.AzureSecurityCenter.ChinaEast.txt
+service.AzureSecurityCenter.ChinaEast2.txt
+service.AzureSecurityCenter.ChinaNorth.txt
+service.AzureSecurityCenter.ChinaNorth2.txt
+service.AzureSecurityCenter.txt
 service.AzureSignalR.ChinaEast2.txt
 service.AzureSignalR.ChinaEast3.txt
 service.AzureSignalR.ChinaNorth.txt
