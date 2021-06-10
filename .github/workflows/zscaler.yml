@@ -19,16 +19,16 @@ jobs:
           mkdir -p temp
       - name: Download source list zscalerthree-ca
         run: |-
-          curl https://api.config.zscaler.com/zscalerthree.net/ca/json -o ./temp/cloudprefixes-zscalerthree-ca.json.temp
+          curl https://api.config.zscaler.com/zscalerthree.net/ca/json -o ./temp/cloudprefixes.zscalerthree-ca.json
       - name: Process list zscalerthree-ca
         run: |-
           # https://stackoverflow.com/questions/618378/select-unique-or-distinct-values-from-a-list-in-unix-shell-script
           # "sort is necessary in this command line, uniq only strips duplicate lines that are immediately after each other"
 
-          jq -r '.ranges | join ("\n")' ./temp/cloudprefixes-zscalerthree-ca.json.temp > zscalerthree-ca.temp
+          jq -r '.ranges | join ("\n")' ./temp/cloudprefixes.zscalerthree-ca.json > ./temp/zscalerthree-ca.temp
           
           # Sort IPs and remove duplicates
-          sort zscalerthree-ca.temp | uniq > zscalerthree-ca.txt
+          sort ./temp/zscalerthree-ca.temp | uniq > zscalerthree-ca.txt
 
       - name: Commit
         run: |-
