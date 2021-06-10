@@ -1,0 +1,47 @@
+name: zscaler
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 4 * * 1,4'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          ref: zscaler
+      - name: Create temp dir
+        run: |-
+          mkdir -p temp
+      - name: Download source list zscalerthree-ca
+        run: |-
+          curl https://api.config.zscaler.com/zscalerthree.net/ca/json -o ./temp/cloudprefixes.zscalerthree-ca.json
+      - name: Process list zscalerthree-ca
+        run: |-
+          # https://stackoverflow.com/questions/618378/select-unique-or-distinct-values-from-a-list-in-unix-shell-script
+          # "sort is necessary in this command line, uniq only strips duplicate lines that are immediately after each other"
+
+          jq -r '.ranges | join ("\n")' ./temp/cloudprefixes.zscalerthree-ca.json > zscalerthree-ca.temp
+          
+          # Sort IPs and remove duplicates
+          sort zscalerthree-ca.temp | uniq > zscalerthree-ca.txt
+
+      - name: Clean up temp files
+        run: |-
+          rm *.json
+          rm *.temp
+
+      - name: Commit
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "Latest data: ${timestamp}" || exit 0
+      - name: Push
+        run: |-
+          git push
