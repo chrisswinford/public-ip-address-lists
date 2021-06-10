@@ -19,11 +19,13 @@ jobs:
           mkdir -p temp
       - name: Download source lists for CAs
         run: |-
+          # Multiple commands here
           curl https://api.config.zscaler.com/zscalerone.net/ca/json -o ./temp/cloudprefixes.zscalerone-ca.json
           curl https://api.config.zscaler.com/zscalertwo.net/ca/json -o ./temp/cloudprefixes.zscalertwo-ca.json
           curl https://api.config.zscaler.com/zscalerthree.net/ca/json -o ./temp/cloudprefixes.zscalerthree-ca.json
       - name: Process source lists for CAs
         run: |-
+          # Multiple commands here
           # https://stackoverflow.com/questions/618378/select-unique-or-distinct-values-from-a-list-in-unix-shell-script
           # "sort is necessary in this command line, uniq only strips duplicate lines that are immediately after each other"
 
@@ -35,6 +37,26 @@ jobs:
           sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n ./temp/zscalerone-ca.temp | uniq > zscalerone-ca.txt
           sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n ./temp/zscalertwo-ca.temp | uniq > zscalertwo-ca.txt
           sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n ./temp/zscalerthree-ca.temp | uniq > zscalerthree-ca.txt
+      - name: Download source lists for PACs
+        run: |-
+          # Multiple commands here
+          curl https://api.config.zscaler.com/zscalerone.net/pac/json -o ./temp/cloudprefixes.zscalerone-pac.json
+          curl https://api.config.zscaler.com/zscalertwo.net/pac/json -o ./temp/cloudprefixes.zscalertwo-pac.json
+          curl https://api.config.zscaler.com/zscalerthree.net/pac/json -o ./temp/cloudprefixes.zscalerthree-pac.json
+      - name: Process source lists for PACs
+        run: |-
+          # Multiple commands here
+          # https://stackoverflow.com/questions/618378/select-unique-or-distinct-values-from-a-list-in-unix-shell-script
+          # "sort is necessary in this command line, uniq only strips duplicate lines that are immediately after each other"
+
+          jq -r '.ranges | join ("\n")' ./temp/cloudprefixes.zscalerone-pac.json > ./temp/zscalerone-pac.temp
+          jq -r '.ranges | join ("\n")' ./temp/cloudprefixes.zscalertwo-pac.json > ./temp/zscalertwo-pac.temp
+          jq -r '.ranges | join ("\n")' ./temp/cloudprefixes.zscalerthree-pac.json > ./temp/zscalerthree-pac.temp
+          
+          # Sort IPs and remove duplicates
+          sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n ./temp/zscalerone-pac.temp | uniq > zscalerone-pac.txt
+          sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n ./temp/zscalertwo-pac.temp | uniq > zscalertwo-pac.txt
+          sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n ./temp/zscalerthree-pac.temp | uniq > zscalerthree-pac.txt
       - name: Commit
         run: |-
           git config user.name "Automated"
