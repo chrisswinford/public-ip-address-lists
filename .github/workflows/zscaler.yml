@@ -28,7 +28,7 @@ jobs:
           jq -r '.ranges | join ("\n")' ./temp/cloudprefixes.zscalerthree-ca.json > ./temp/zscalerthree-ca.temp
           
           # Sort IPs and remove duplicates
-          sort ./temp/zscalerthree-ca.temp | uniq > zscalerthree-ca.txt
+          sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n ./temp/zscalerthree-ca.temp | uniq > zscalerthree-ca.txt
 
       - name: Commit
         run: |-
