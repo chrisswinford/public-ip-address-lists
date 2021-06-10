@@ -49,9 +49,9 @@ jobs:
           # https://stackoverflow.com/questions/618378/select-unique-or-distinct-values-from-a-list-in-unix-shell-script
           # "sort is necessary in this command line, uniq only strips duplicate lines that are immediately after each other"
 
-          jq -r '.ranges | join ("\n")' ./temp/cloudprefixes.zscalerone-pac.json > ./temp/zscalerone-pac.temp
-          jq -r '.ranges | join ("\n")' ./temp/cloudprefixes.zscalertwo-pac.json > ./temp/zscalertwo-pac.temp
-          jq -r '.ranges | join ("\n")' ./temp/cloudprefixes.zscalerthree-pac.json > ./temp/zscalerthree-pac.temp
+          jq -r '.ip | join ("\n")' ./temp/cloudprefixes.zscalerone-pac.json > ./temp/zscalerone-pac.temp
+          jq -r '.ip | join ("\n")' ./temp/cloudprefixes.zscalertwo-pac.json > ./temp/zscalertwo-pac.temp
+          jq -r '.ip | join ("\n")' ./temp/cloudprefixes.zscalerthree-pac.json > ./temp/zscalerthree-pac.temp
           
           # Sort IPs and remove duplicates
           sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n ./temp/zscalerone-pac.temp | uniq > zscalerone-pac.txt
