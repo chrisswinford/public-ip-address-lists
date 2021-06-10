@@ -15,6 +15,10 @@ This repository's goal is to automatically download, parse, and publish commonly
 | Microsoft Azure (German Cloud) | [azuregermancloud](https://github.com/chrisswinford/public-ip-address-lists/tree/azuregermancloud) | TBD | [Link](https://www.microsoft.com/en-us/download/details.aspx?id=57064) | No |
 | Microsoft Azure (US Government Cloud) | [azureusgovernment](https://github.com/chrisswinford/public-ip-address-lists/tree/azureusgovernment) | TBD | [Link](https://www.microsoft.com/en-us/download/details.aspx?id=57063) | No |
 
+| Service Provider | Branch | Provider Documentation | IP Network Source | Source is EDL-ready? |
+| --- | :-: | :-: | :-: | :-: |
+| Zscaler | TBD | [Link](https://help.zscaler.com/zia/cloud-service-api) | TBD | No |
+
 | Threat Provider | Branch | Provider Documentation | IP Network Source | Source is EDL-ready? |
 | --- | :-: | :-: | :-: | :-: |
 | Abuse.ch Botnet C2 IP Blacklist | TBD | [Link](https://sslbl.abuse.ch/blacklist/) | [Link](https://sslbl.abuse.ch/blacklist/sslipblacklist.txt) | Yes |
