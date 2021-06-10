@@ -82,6 +82,7 @@ service.ActionGroup.NorthCentralUS.txt
 service.ActionGroup.NorthEurope.txt
 service.ActionGroup.NorwayEast.txt
 service.ActionGroup.NorwayWest.txt
+service.ActionGroup.QatarCentral.txt
 service.ActionGroup.SouthAfricaNorth.txt
 service.ActionGroup.SouthAfricaWest.txt
 service.ActionGroup.SouthCentralUS.txt
@@ -135,6 +136,7 @@ service.ApiManagement.NorthCentralUS.txt
 service.ApiManagement.NorthEurope.txt
 service.ApiManagement.NorwayEast.txt
 service.ApiManagement.NorwayWest.txt
+service.ApiManagement.QatarCentral.txt
 service.ApiManagement.SouthAfricaNorth.txt
 service.ApiManagement.SouthAfricaWest.txt
 service.ApiManagement.SouthCentralUS.txt
@@ -190,6 +192,7 @@ service.AppService.NorthCentralUS.txt
 service.AppService.NorthEurope.txt
 service.AppService.NorwayEast.txt
 service.AppService.NorwayWest.txt
+service.AppService.QatarCentral.txt
 service.AppService.SouthAfricaNorth.txt
 service.AppService.SouthAfricaWest.txt
 service.AppService.SouthCentralUS.txt
@@ -244,6 +247,7 @@ service.AppServiceManagement.NorthCentralUS.txt
 service.AppServiceManagement.NorthEurope.txt
 service.AppServiceManagement.NorwayEast.txt
 service.AppServiceManagement.NorwayWest.txt
+service.AppServiceManagement.QatarCentral.txt
 service.AppServiceManagement.SouthAfricaNorth.txt
 service.AppServiceManagement.SouthAfricaWest.txt
 service.AppServiceManagement.SouthCentralUS.txt
@@ -349,6 +353,7 @@ service.AzureBackup.NorthCentralUS.txt
 service.AzureBackup.NorthEurope.txt
 service.AzureBackup.NorwayEast.txt
 service.AzureBackup.NorwayWest.txt
+service.AzureBackup.QatarCentral.txt
 service.AzureBackup.SouthAfricaNorth.txt
 service.AzureBackup.SouthAfricaWest.txt
 service.AzureBackup.SouthCentralUS.txt
@@ -403,6 +408,7 @@ service.AzureBotService.NorthCentralUS.txt
 service.AzureBotService.NorthEurope.txt
 service.AzureBotService.NorwayEast.txt
 service.AzureBotService.NorwayWest.txt
+service.AzureBotService.QatarCentral.txt
 service.AzureBotService.SouthAfricaNorth.txt
 service.AzureBotService.SouthAfricaWest.txt
 service.AzureBotService.SouthCentralUS.txt
@@ -506,6 +512,7 @@ service.AzureCognitiveSearch.NorthCentralUS.txt
 service.AzureCognitiveSearch.NorthEurope.txt
 service.AzureCognitiveSearch.NorwayEast.txt
 service.AzureCognitiveSearch.NorwayWest.txt
+service.AzureCognitiveSearch.QatarCentral.txt
 service.AzureCognitiveSearch.SouthAfricaNorth.txt
 service.AzureCognitiveSearch.SouthAfricaWest.txt
 service.AzureCognitiveSearch.SouthCentralUS.txt
@@ -560,6 +567,7 @@ service.AzureConnectors.NorthCentralUS.txt
 service.AzureConnectors.NorthEurope.txt
 service.AzureConnectors.NorwayEast.txt
 service.AzureConnectors.NorwayWest.txt
+service.AzureConnectors.QatarCentral.txt
 service.AzureConnectors.SouthAfricaNorth.txt
 service.AzureConnectors.SouthAfricaWest.txt
 service.AzureConnectors.SouthCentralUS.txt
@@ -614,6 +622,7 @@ service.AzureContainerRegistry.NorthCentralUS.txt
 service.AzureContainerRegistry.NorthEurope.txt
 service.AzureContainerRegistry.NorwayEast.txt
 service.AzureContainerRegistry.NorwayWest.txt
+service.AzureContainerRegistry.QatarCentral.txt
 service.AzureContainerRegistry.SouthAfricaNorth.txt
 service.AzureContainerRegistry.SouthAfricaWest.txt
 service.AzureContainerRegistry.SouthCentralUS.txt
@@ -668,6 +677,7 @@ service.AzureCosmosDB.NorthCentralUS.txt
 service.AzureCosmosDB.NorthEurope.txt
 service.AzureCosmosDB.NorwayEast.txt
 service.AzureCosmosDB.NorwayWest.txt
+service.AzureCosmosDB.QatarCentral.txt
 service.AzureCosmosDB.SouthAfricaNorth.txt
 service.AzureCosmosDB.SouthAfricaWest.txt
 service.AzureCosmosDB.SouthCentralUS.txt
@@ -722,6 +732,7 @@ service.AzureDataExplorerManagement.NorthCentralUS.txt
 service.AzureDataExplorerManagement.NorthEurope.txt
 service.AzureDataExplorerManagement.NorwayEast.txt
 service.AzureDataExplorerManagement.NorwayWest.txt
+service.AzureDataExplorerManagement.QatarCentral.txt
 service.AzureDataExplorerManagement.SouthAfricaNorth.txt
 service.AzureDataExplorerManagement.SouthAfricaWest.txt
 service.AzureDataExplorerManagement.SouthCentralUS.txt
@@ -822,6 +833,7 @@ service.AzureDigitalTwins.NorthCentralUS.txt
 service.AzureDigitalTwins.NorthEurope.txt
 service.AzureDigitalTwins.NorwayEast.txt
 service.AzureDigitalTwins.NorwayWest.txt
+service.AzureDigitalTwins.QatarCentral.txt
 service.AzureDigitalTwins.SouthAfricaNorth.txt
 service.AzureDigitalTwins.SouthAfricaWest.txt
 service.AzureDigitalTwins.SouthCentralUS.txt
@@ -874,6 +886,7 @@ service.AzureEventGrid.NorthCentralUS.txt
 service.AzureEventGrid.NorthEurope.txt
 service.AzureEventGrid.NorwayEast.txt
 service.AzureEventGrid.NorwayWest.txt
+service.AzureEventGrid.QatarCentral.txt
 service.AzureEventGrid.SouthAfricaNorth.txt
 service.AzureEventGrid.SouthAfricaWest.txt
 service.AzureEventGrid.SouthCentralUS.txt
@@ -932,6 +945,7 @@ service.AzureIoTHub.NorthCentralUS.txt
 service.AzureIoTHub.NorthEurope.txt
 service.AzureIoTHub.NorwayEast.txt
 service.AzureIoTHub.NorwayWest.txt
+service.AzureIoTHub.QatarCentral.txt
 service.AzureIoTHub.SouthAfricaNorth.txt
 service.AzureIoTHub.SouthAfricaWest.txt
 service.AzureIoTHub.SouthCentralUS.txt
@@ -986,6 +1000,7 @@ service.AzureKeyVault.NorthCentralUS.txt
 service.AzureKeyVault.NorthEurope.txt
 service.AzureKeyVault.NorwayEast.txt
 service.AzureKeyVault.NorwayWest.txt
+service.AzureKeyVault.QatarCentral.txt
 service.AzureKeyVault.SouthAfricaNorth.txt
 service.AzureKeyVault.SouthAfricaWest.txt
 service.AzureKeyVault.SouthCentralUS.txt
@@ -1040,6 +1055,7 @@ service.AzureMachineLearning.NorthCentralUS.txt
 service.AzureMachineLearning.NorthEurope.txt
 service.AzureMachineLearning.NorwayEast.txt
 service.AzureMachineLearning.NorwayWest.txt
+service.AzureMachineLearning.QatarCentral.txt
 service.AzureMachineLearning.SouthAfricaNorth.txt
 service.AzureMachineLearning.SouthAfricaWest.txt
 service.AzureMachineLearning.SouthCentralUS.txt
@@ -1095,6 +1111,7 @@ service.AzureMonitor.NorthCentralUS.txt
 service.AzureMonitor.NorthEurope.txt
 service.AzureMonitor.NorwayEast.txt
 service.AzureMonitor.NorwayWest.txt
+service.AzureMonitor.QatarCentral.txt
 service.AzureMonitor.SouthAfricaNorth.txt
 service.AzureMonitor.SouthAfricaWest.txt
 service.AzureMonitor.SouthCentralUS.txt
@@ -1200,6 +1217,7 @@ service.AzurePortal.NorthCentralUS.txt
 service.AzurePortal.NorthEurope.txt
 service.AzurePortal.NorwayEast.txt
 service.AzurePortal.NorwayWest.txt
+service.AzurePortal.QatarCentral.txt
 service.AzurePortal.SouthAfricaNorth.txt
 service.AzurePortal.SouthAfricaWest.txt
 service.AzurePortal.SouthCentralUS.txt
@@ -1254,6 +1272,7 @@ service.AzureResourceManager.NorthCentralUS.txt
 service.AzureResourceManager.NorthEurope.txt
 service.AzureResourceManager.NorwayEast.txt
 service.AzureResourceManager.NorwayWest.txt
+service.AzureResourceManager.QatarCentral.txt
 service.AzureResourceManager.SouthAfricaNorth.txt
 service.AzureResourceManager.SouthAfricaWest.txt
 service.AzureResourceManager.SouthCentralUS.txt
@@ -1426,6 +1445,7 @@ service.BatchNodeManagement.NorthCentralUS.txt
 service.BatchNodeManagement.NorthEurope.txt
 service.BatchNodeManagement.NorwayEast.txt
 service.BatchNodeManagement.NorwayWest.txt
+service.BatchNodeManagement.QatarCentral.txt
 service.BatchNodeManagement.SouthAfricaNorth.txt
 service.BatchNodeManagement.SouthAfricaWest.txt
 service.BatchNodeManagement.SouthCentralUS.txt
@@ -1481,6 +1501,7 @@ service.DataFactory.NorthCentralUS.txt
 service.DataFactory.NorthEurope.txt
 service.DataFactory.NorwayEast.txt
 service.DataFactory.NorwayWest.txt
+service.DataFactory.QatarCentral.txt
 service.DataFactory.SouthAfricaNorth.txt
 service.DataFactory.SouthAfricaWest.txt
 service.DataFactory.SouthCentralUS.txt
@@ -1550,6 +1571,7 @@ service.EventHub.NorthCentralUS.txt
 service.EventHub.NorthEurope.txt
 service.EventHub.NorwayEast.txt
 service.EventHub.NorwayWest.txt
+service.EventHub.QatarCentral.txt
 service.EventHub.SouthAfricaNorth.txt
 service.EventHub.SouthAfricaWest.txt
 service.EventHub.SouthCentralUS.txt
@@ -1604,6 +1626,7 @@ service.GatewayManager.NorthCentralUS.txt
 service.GatewayManager.NorthEurope.txt
 service.GatewayManager.NorwayEast.txt
 service.GatewayManager.NorwayWest.txt
+service.GatewayManager.QatarCentral.txt
 service.GatewayManager.SouthAfricaNorth.txt
 service.GatewayManager.SouthAfricaWest.txt
 service.GatewayManager.SouthCentralUS.txt
@@ -1659,6 +1682,7 @@ service.HDInsight.NorthCentralUS.txt
 service.HDInsight.NorthEurope.txt
 service.HDInsight.NorwayEast.txt
 service.HDInsight.NorwayWest.txt
+service.HDInsight.QatarCentral.txt
 service.HDInsight.SouthAfricaNorth.txt
 service.HDInsight.SouthAfricaWest.txt
 service.HDInsight.SouthCentralUS.txt
@@ -1713,6 +1737,7 @@ service.LogicApps.NorthCentralUS.txt
 service.LogicApps.NorthEurope.txt
 service.LogicApps.NorwayEast.txt
 service.LogicApps.NorwayWest.txt
+service.LogicApps.QatarCentral.txt
 service.LogicApps.SouthAfricaNorth.txt
 service.LogicApps.SouthAfricaWest.txt
 service.LogicApps.SouthCentralUS.txt
@@ -1788,6 +1813,7 @@ service.MicrosoftContainerRegistry.NorthCentralUS.txt
 service.MicrosoftContainerRegistry.NorthEurope.txt
 service.MicrosoftContainerRegistry.NorwayEast.txt
 service.MicrosoftContainerRegistry.NorwayWest.txt
+service.MicrosoftContainerRegistry.QatarCentral.txt
 service.MicrosoftContainerRegistry.SouthAfricaNorth.txt
 service.MicrosoftContainerRegistry.SouthAfricaWest.txt
 service.MicrosoftContainerRegistry.SouthCentralUS.txt
@@ -1843,6 +1869,7 @@ service.PowerQueryOnline.NorthCentralUS.txt
 service.PowerQueryOnline.NorthEurope.txt
 service.PowerQueryOnline.NorwayEast.txt
 service.PowerQueryOnline.NorwayWest.txt
+service.PowerQueryOnline.QatarCentral.txt
 service.PowerQueryOnline.SouthAfricaNorth.txt
 service.PowerQueryOnline.SouthAfricaWest.txt
 service.PowerQueryOnline.SouthCentralUS.txt
@@ -1948,6 +1975,7 @@ service.ServiceBus.NorthCentralUS.txt
 service.ServiceBus.NorthEurope.txt
 service.ServiceBus.NorwayEast.txt
 service.ServiceBus.NorwayWest.txt
+service.ServiceBus.QatarCentral.txt
 service.ServiceBus.SouthAfricaNorth.txt
 service.ServiceBus.SouthAfricaWest.txt
 service.ServiceBus.SouthCentralUS.txt
@@ -2002,6 +2030,7 @@ service.ServiceFabric.NorthCentralUS.txt
 service.ServiceFabric.NorthEurope.txt
 service.ServiceFabric.NorwayEast.txt
 service.ServiceFabric.NorwayWest.txt
+service.ServiceFabric.QatarCentral.txt
 service.ServiceFabric.SouthAfricaNorth.txt
 service.ServiceFabric.SouthAfricaWest.txt
 service.ServiceFabric.SouthCentralUS.txt
@@ -2058,6 +2087,7 @@ service.Sql.NorthCentralUSStage.txt
 service.Sql.NorthEurope.txt
 service.Sql.NorwayEast.txt
 service.Sql.NorwayWest.txt
+service.Sql.QatarCentral.txt
 service.Sql.SouthAfricaNorth.txt
 service.Sql.SouthAfricaWest.txt
 service.Sql.SouthCentralUS.txt
@@ -2170,6 +2200,7 @@ service.StorageSyncService.NorthCentralUS.txt
 service.StorageSyncService.NorthEurope.txt
 service.StorageSyncService.NorwayEast.txt
 service.StorageSyncService.NorwayWest.txt
+service.StorageSyncService.QatarCentral.txt
 service.StorageSyncService.SouthAfricaNorth.txt
 service.StorageSyncService.SouthAfricaWest.txt
 service.StorageSyncService.SouthCentralUS.txt
