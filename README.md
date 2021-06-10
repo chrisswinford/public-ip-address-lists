@@ -17,3 +17,4 @@
 | Zscaler zscalerthree Central Authority IP Addresses | zscalerthree-ca | [Link](https://help.zscaler.com/zia/cloud-service-api) | [Link](https://api.config.zscaler.com/zscalerthree.net/ca/json) | No |
 | Zscaler zscalerthree PAC IP Addresses | zscalerthree-pac | [Link](https://help.zscaler.com/zia/cloud-service-api) | [Link](https://api.config.zscaler.com/zscalerthree.net/pac/json) | No |
 
+TODO: Add /zpa/json lists.
