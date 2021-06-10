@@ -17,6 +17,32 @@ jobs:
       - name: Create temp dir
         run: |-
           mkdir -p temp
+      - name: Download source list zscalerone-ca
+        run: |-
+          curl https://api.config.zscaler.com/zscalerone.net/ca/json -o ./temp/cloudprefixes.zscalerone-ca.json
+      - name: Process list zscalertwo-ca
+        run: |-
+          # https://stackoverflow.com/questions/618378/select-unique-or-distinct-values-from-a-list-in-unix-shell-script
+          # "sort is necessary in this command line, uniq only strips duplicate lines that are immediately after each other"
+
+          jq -r '.ranges | join ("\n")' ./temp/cloudprefixes.zscalerone-ca.json > ./temp/zscalerone-ca.temp
+          
+          # Sort IPs and remove duplicates
+          sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n ./temp/zscalerone-ca.temp | uniq > zscalerone-ca.txt
+
+      - name: Download source list zscalertwo-ca
+        run: |-
+          curl https://api.config.zscaler.com/zscalertwo.net/ca/json -o ./temp/cloudprefixes.zscalertwo-ca.json
+      - name: Process list zscalertwo-ca
+        run: |-
+          # https://stackoverflow.com/questions/618378/select-unique-or-distinct-values-from-a-list-in-unix-shell-script
+          # "sort is necessary in this command line, uniq only strips duplicate lines that are immediately after each other"
+
+          jq -r '.ranges | join ("\n")' ./temp/cloudprefixes.zscalertwo-ca.json > ./temp/zscalertwo-ca.temp
+          
+          # Sort IPs and remove duplicates
+          sort -t . -k 1,1n -k 2,2n -k 3,3n -k 4,4n ./temp/zscalertwo-ca.temp | uniq > zscalertwo-ca.txt
+
       - name: Download source list zscalerthree-ca
         run: |-
           curl https://api.config.zscaler.com/zscalerthree.net/ca/json -o ./temp/cloudprefixes.zscalerthree-ca.json
