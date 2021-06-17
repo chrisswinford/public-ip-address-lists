@@ -44,6 +44,13 @@ service.AzureArcInfrastructure.USGovIowa.txt
 service.AzureArcInfrastructure.USGovTexas.txt
 service.AzureArcInfrastructure.USGovVirginia.txt
 service.AzureArcInfrastructure.txt
+service.AzureAttestation.USDoDCentral.txt
+service.AzureAttestation.USDoDEast.txt
+service.AzureAttestation.USGovArizona.txt
+service.AzureAttestation.USGovIowa.txt
+service.AzureAttestation.USGovTexas.txt
+service.AzureAttestation.USGovVirginia.txt
+service.AzureAttestation.txt
 service.AzureBackup.USDoDCentral.txt
 service.AzureBackup.USDoDEast.txt
 service.AzureBackup.USGovArizona.txt
