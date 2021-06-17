@@ -38,6 +38,13 @@ service.AzureActiveDirectory.ServiceEndpoint.txt
 service.AzureActiveDirectory.txt
 service.AzureActiveDirectoryDomainServices.txt
 service.AzureAdvancedThreatProtection.txt
+service.AzureAttestation.ChinaEast.txt
+service.AzureAttestation.ChinaEast2.txt
+service.AzureAttestation.ChinaEast3.txt
+service.AzureAttestation.ChinaNorth.txt
+service.AzureAttestation.ChinaNorth2.txt
+service.AzureAttestation.ChinaNorth3.txt
+service.AzureAttestation.txt
 service.AzureBackup.ChinaEast.txt
 service.AzureBackup.ChinaEast2.txt
 service.AzureBackup.ChinaEast3.txt
