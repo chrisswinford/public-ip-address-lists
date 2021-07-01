@@ -61,8 +61,10 @@ service.AzureBotService.ChinaNorth3.txt
 service.AzureBotService.txt
 service.AzureCloud.chinaeast.txt
 service.AzureCloud.chinaeast2.txt
+service.AzureCloud.chinaeast3.txt
 service.AzureCloud.chinanorth.txt
 service.AzureCloud.chinanorth2.txt
+service.AzureCloud.chinanorth3.txt
 service.AzureCloud.txt
 service.AzureCognitiveSearch.ChinaEast.txt
 service.AzureCognitiveSearch.ChinaEast2.txt
