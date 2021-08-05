@@ -3,6 +3,7 @@ region.australiacentral2.txt
 region.australiaeast.txt
 region.australiasoutheast.txt
 region.austriaeast.txt
+region.brazilne.txt
 region.brazilse.txt
 region.brazilsouth.txt
 region.canadacentral.txt
@@ -13,6 +14,7 @@ region.centralus.txt
 region.centraluseuap.txt
 region.chilec.txt
 region.eastasia.txt
+region.easteurope.txt
 region.eastus.txt
 region.eastus2.txt
 region.eastus2euap.txt
@@ -32,6 +34,7 @@ region.mexicocentral.txt
 region.newzealandnorth.txt
 region.northcentralus.txt
 region.northeurope.txt
+region.northeurope2.txt
 region.norwaye.txt
 region.norwayw.txt
 region.polandcentral.txt
@@ -501,6 +504,7 @@ service.AzureCloud.australiacentral2.txt
 service.AzureCloud.australiaeast.txt
 service.AzureCloud.australiasoutheast.txt
 service.AzureCloud.austriaeast.txt
+service.AzureCloud.brazilne.txt
 service.AzureCloud.brazilse.txt
 service.AzureCloud.brazilsouth.txt
 service.AzureCloud.canadacentral.txt
@@ -511,6 +515,7 @@ service.AzureCloud.centralus.txt
 service.AzureCloud.centraluseuap.txt
 service.AzureCloud.chilec.txt
 service.AzureCloud.eastasia.txt
+service.AzureCloud.easteurope.txt
 service.AzureCloud.eastus.txt
 service.AzureCloud.eastus2.txt
 service.AzureCloud.eastus2euap.txt
@@ -530,6 +535,7 @@ service.AzureCloud.mexicocentral.txt
 service.AzureCloud.newzealandnorth.txt
 service.AzureCloud.northcentralus.txt
 service.AzureCloud.northeurope.txt
+service.AzureCloud.northeurope2.txt
 service.AzureCloud.norwaye.txt
 service.AzureCloud.norwayw.txt
 service.AzureCloud.polandcentral.txt
