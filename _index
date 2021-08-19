@@ -23,6 +23,7 @@ region.germanyn.txt
 region.germanywc.txt
 region.isrealcentral.txt
 region.italnorth.txt
+region.italynorth.txt
 region.japaneast.txt
 region.japanwest.txt
 region.jioindiacentral.txt
@@ -524,6 +525,7 @@ service.AzureCloud.germanyn.txt
 service.AzureCloud.germanywc.txt
 service.AzureCloud.isrealcentral.txt
 service.AzureCloud.italnorth.txt
+service.AzureCloud.italynorth.txt
 service.AzureCloud.japaneast.txt
 service.AzureCloud.japanwest.txt
 service.AzureCloud.jioindiacentral.txt
