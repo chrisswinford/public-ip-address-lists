@@ -18,6 +18,7 @@ This repository's goal is to automatically download, parse, and publish commonly
 | Service Provider | Branch | Provider Documentation | IP Network Source | Source is EDL-ready? |
 | --- | :-: | :-: | :-: | :-: |
 | Zscaler | zscaler | [Link](https://help.zscaler.com/zia/cloud-service-api) | See branch | No |
+| GitHub | github | [Link](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/about-githubs-ip-addresses) | [Link](https://api.github.com/meta) | No |
 
 | Threat Provider | Branch | Provider Documentation | IP Network Source | Source is EDL-ready? |
 | --- | :-: | :-: | :-: | :-: |
