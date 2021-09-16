@@ -221,6 +221,7 @@ service.LogicApps.USGovTexas.txt
 service.LogicApps.USGovVirginia.txt
 service.LogicApps.txt
 service.LogicAppsManagement.txt
+service.M365ManagementActivityApi.txt
 service.MicrosoftCloudAppSecurity.USDoDEast.txt
 service.MicrosoftCloudAppSecurity.USGovVirginia.txt
 service.MicrosoftCloudAppSecurity.txt
@@ -230,6 +231,7 @@ service.MicrosoftContainerRegistry.USGovArizona.txt
 service.MicrosoftContainerRegistry.USGovTexas.txt
 service.MicrosoftContainerRegistry.USGovVirginia.txt
 service.MicrosoftContainerRegistry.txt
+service.OneDsCollector.txt
 service.PowerBI.txt
 service.PowerQueryOnline.USDoDCentral.txt
 service.PowerQueryOnline.USDoDEast.txt
@@ -280,6 +282,7 @@ service.StorageSyncService.USGovIowa.txt
 service.StorageSyncService.USGovTexas.txt
 service.StorageSyncService.USGovVirginia.txt
 service.StorageSyncService.txt
+service.WindowsAdminCenter.txt
 service.WindowsVirtualDesktop.USGovArizona.txt
 service.WindowsVirtualDesktop.USGovVirginia.txt
 service.WindowsVirtualDesktop.txt
