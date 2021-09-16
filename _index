@@ -1851,6 +1851,7 @@ service.LogicApps.WestUS2.txt
 service.LogicApps.WestUS3.txt
 service.LogicApps.txt
 service.LogicAppsManagement.txt
+service.M365ManagementActivityApi.txt
 service.MicrosoftCloudAppSecurity.AustraliaEast.txt
 service.MicrosoftCloudAppSecurity.AustraliaSoutheast.txt
 service.MicrosoftCloudAppSecurity.CanadaCentral.txt
@@ -1926,6 +1927,7 @@ service.MicrosoftContainerRegistry.WestUS.txt
 service.MicrosoftContainerRegistry.WestUS2.txt
 service.MicrosoftContainerRegistry.WestUS3.txt
 service.MicrosoftContainerRegistry.txt
+service.OneDsCollector.txt
 service.PowerBI.txt
 service.PowerQueryOnline.AustraliaCentral.txt
 service.PowerQueryOnline.AustraliaCentral2.txt
@@ -2313,6 +2315,7 @@ service.StorageSyncService.WestUS.txt
 service.StorageSyncService.WestUS2.txt
 service.StorageSyncService.WestUS3.txt
 service.StorageSyncService.txt
+service.WindowsAdminCenter.txt
 service.WindowsVirtualDesktop.AustraliaCentral.txt
 service.WindowsVirtualDesktop.AustraliaEast.txt
 service.WindowsVirtualDesktop.AustraliaSoutheast.txt
