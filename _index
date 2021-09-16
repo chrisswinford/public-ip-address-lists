@@ -215,6 +215,7 @@ service.LogicApps.ChinaNorth2.txt
 service.LogicApps.ChinaNorth3.txt
 service.LogicApps.txt
 service.LogicAppsManagement.txt
+service.M365ManagementActivityApi.txt
 service.MicrosoftCloudAppSecurity.ChinaEast.txt
 service.MicrosoftCloudAppSecurity.ChinaEast2.txt
 service.MicrosoftCloudAppSecurity.ChinaNorth.txt
@@ -227,6 +228,7 @@ service.MicrosoftContainerRegistry.ChinaNorth.txt
 service.MicrosoftContainerRegistry.ChinaNorth2.txt
 service.MicrosoftContainerRegistry.ChinaNorth3.txt
 service.MicrosoftContainerRegistry.txt
+service.OneDsCollector.txt
 service.PowerBI.txt
 service.PowerQueryOnline.ChinaEast.txt
 service.PowerQueryOnline.ChinaEast2.txt
@@ -270,6 +272,7 @@ service.StorageSyncService.ChinaNorth.txt
 service.StorageSyncService.ChinaNorth2.txt
 service.StorageSyncService.ChinaNorth3.txt
 service.StorageSyncService.txt
+service.WindowsAdminCenter.txt
 service.WindowsVirtualDesktop.ChinaEast2.txt
 service.WindowsVirtualDesktop.ChinaNorth2.txt
 service.WindowsVirtualDesktop.txt
