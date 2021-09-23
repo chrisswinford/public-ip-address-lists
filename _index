@@ -222,6 +222,7 @@ service.LogicApps.USGovVirginia.txt
 service.LogicApps.txt
 service.LogicAppsManagement.txt
 service.M365ManagementActivityApi.txt
+service.MicrosoftAzureFluidRelay.txt
 service.MicrosoftCloudAppSecurity.USDoDEast.txt
 service.MicrosoftCloudAppSecurity.USGovVirginia.txt
 service.MicrosoftCloudAppSecurity.txt
