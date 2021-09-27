@@ -1852,6 +1852,7 @@ service.LogicApps.WestUS3.txt
 service.LogicApps.txt
 service.LogicAppsManagement.txt
 service.M365ManagementActivityApi.txt
+service.MicrosoftAzureFluidRelay.txt
 service.MicrosoftCloudAppSecurity.AustraliaEast.txt
 service.MicrosoftCloudAppSecurity.AustraliaSoutheast.txt
 service.MicrosoftCloudAppSecurity.CanadaCentral.txt
