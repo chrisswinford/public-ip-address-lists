@@ -1930,6 +1930,7 @@ service.MicrosoftContainerRegistry.WestUS3.txt
 service.MicrosoftContainerRegistry.txt
 service.OneDsCollector.txt
 service.PowerBI.txt
+service.PowerPlatformInfra.txt
 service.PowerQueryOnline.AustraliaCentral.txt
 service.PowerQueryOnline.AustraliaCentral2.txt
 service.PowerQueryOnline.AustraliaEast.txt
