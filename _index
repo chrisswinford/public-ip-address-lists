@@ -231,6 +231,7 @@ service.MicrosoftContainerRegistry.ChinaNorth3.txt
 service.MicrosoftContainerRegistry.txt
 service.OneDsCollector.txt
 service.PowerBI.txt
+service.PowerPlatformInfra.txt
 service.PowerQueryOnline.ChinaEast.txt
 service.PowerQueryOnline.ChinaEast2.txt
 service.PowerQueryOnline.ChinaEast3.txt
