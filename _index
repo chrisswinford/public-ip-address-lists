@@ -234,6 +234,7 @@ service.MicrosoftContainerRegistry.USGovVirginia.txt
 service.MicrosoftContainerRegistry.txt
 service.OneDsCollector.txt
 service.PowerBI.txt
+service.PowerPlatformInfra.txt
 service.PowerQueryOnline.USDoDCentral.txt
 service.PowerQueryOnline.USDoDEast.txt
 service.PowerQueryOnline.USGovArizona.txt
