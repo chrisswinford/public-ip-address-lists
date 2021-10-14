@@ -167,6 +167,7 @@ service.AzureSignalR.ChinaNorth2.txt
 service.AzureSignalR.ChinaNorth3.txt
 service.AzureSignalR.txt
 service.AzureSiteRecovery.txt
+service.AzureStack.txt
 service.AzureTrafficManager.txt
 service.BatchNodeManagement.ChinaEast.txt
 service.BatchNodeManagement.ChinaEast2.txt
