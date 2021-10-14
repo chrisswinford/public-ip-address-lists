@@ -3,6 +3,7 @@ region.australiacentral2.txt
 region.australiaeast.txt
 region.australiasoutheast.txt
 region.austriaeast.txt
+region.belgiumcentral.txt
 region.brazilne.txt
 region.brazilse.txt
 region.brazilsouth.txt
@@ -505,6 +506,7 @@ service.AzureCloud.australiacentral2.txt
 service.AzureCloud.australiaeast.txt
 service.AzureCloud.australiasoutheast.txt
 service.AzureCloud.austriaeast.txt
+service.AzureCloud.belgiumcentral.txt
 service.AzureCloud.brazilne.txt
 service.AzureCloud.brazilse.txt
 service.AzureCloud.brazilsouth.txt
@@ -1492,6 +1494,8 @@ service.AzureSignalR.WestUS2.txt
 service.AzureSignalR.WestUS3.txt
 service.AzureSignalR.txt
 service.AzureSiteRecovery.txt
+service.AzureSphere.txt
+service.AzureStack.txt
 service.AzureTrafficManager.txt
 service.AzureUpdateDelivery.CentralUS.txt
 service.AzureUpdateDelivery.EastAsia.txt
